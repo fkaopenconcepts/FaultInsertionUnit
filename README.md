@@ -3,11 +3,11 @@
 <p style="text-align: justify;">This allows an easy and central way for the integration into the test construction and offers flexible and comprehensive modifications. All modifications, which are already implemented and available, can be found in an overview <a href="http://opensource.kuefen.de/systemvalidierung/fehleraufschaltung/fehleraufschaltung/beschreibung-der-fehlerbloecke/">here</a>. If needed, the fault blocks can be extended and modified easily.</p>
 <p style="text-align: justify;">Theoretically the chronological order in which the different fault blocks can modify the signal is variable. Although some modifications will not have the desired effect on the signal when there are also other modifications which work "against them". So the Fault Insertion Unit already offers the most convenient orders for the different signal types which are illustrated below:</p>
 <p style="text-align: justify;"><span style="text-decoration: underline;">Modifications and order for continuous signals:</span></p>
-<p style="text-align: justify;"><a href="http://opensource.kuefen.de/wp-content/uploads/2015/10/Continuous.png"><img class="alignnone wp-image-69" src="http://opensource.kuefen.de/wp-content/uploads/2015/10/Continuous.png" alt="Continuous" width="604" height="110" /></a></p>
+<p style="text-align: justify;"><a href="./images/Continuous.png"><img class="alignnone wp-image-69" src="./images/Continuous.png" alt="Continuous" width="604" height="110" /></a></p>
 <p style="text-align: justify;"><span style="text-decoration: underline;">Modifications and order for digital signals:</span></p>
-<p style="text-align: justify;"><a href="http://opensource.kuefen.de/wp-content/uploads/2015/10/Digital.png"><img class="alignnone wp-image-70" src="http://opensource.kuefen.de/wp-content/uploads/2015/10/Digital.png" alt="Digital" width="407" height="110" /></a></p>
+<p style="text-align: justify;"><a href="./images/Digital.png"><img class="alignnone wp-image-70" src="./images/Digital.png" alt="Digital" width="407" height="110" /></a></p>
 <p style="text-align: justify;"><span style="text-decoration: underline;">Modifications and order for quantized signals:</span></p>
-<p style="text-align: justify;"><a href="http://opensource.kuefen.de/wp-content/uploads/2015/10/Case.png"><img class="alignnone wp-image-68" src="http://opensource.kuefen.de/wp-content/uploads/2015/10/Case.png" alt="Case" width="217" height="110" /></a></p>
+<p style="text-align: justify;"><a href="./images/Case.png"><img class="alignnone wp-image-68" src="./images/Case.png" alt="Case" width="217" height="110" /></a></p>
 <p style="text-align: justify;">The implementation of the Fault Insertion Unit is currently available for:</p>
 
 <ul style="text-align: justify;">
