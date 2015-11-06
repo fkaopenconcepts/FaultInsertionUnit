@@ -9,7 +9,7 @@
 <p style="text-align: justify;">Our example program, which we want to test on tolerance for input errors, does  for reasons of simplification nothing else than calculating the slope between the current and the last signal value.</p>
 <p style="text-align: justify;">With the predefined input signal (left, blue) the output signal would look like the following (right, red):</p>
 
-<p style="text-align: justify;"><a href="./images/Input.png"><img class="alignnone wp-image-77" src="./images/Input.png" alt="Input" width="299" height="224" /></a> <a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/Output.png"><img class="alignnone wp-image-79" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/Output.png" alt="Output" width="299" height="224" /></a></p>
+<p style="text-align: justify;"><a href="./images/Input.png"><img class="alignnone wp-image-77" src="./images/Input.png" alt="Input" width="299" height="224" /></a> <a href="./images/Output.png"><img class="alignnone wp-image-79" src="./images/Output.png" alt="Output" width="299" height="224" /></a></p>
 
 <p style="text-align: justify;">The main loop of our program contains the following code segements where the signal processing is happening:</p>
 
@@ -45,6 +45,6 @@ Signal = GetSlope(Signal);            <span style="color: #339966;">// DUT</span
 Output[ControlVariable] =  Signal;    <span style="color: #339966;">// modified signal -&gt; output</span>
 </span></pre>
 <p style="text-align: justify;">Now the input/output signals will look like this:</p>
-<p style="text-align: justify;"><a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/InputWithFaults.png"><img class="wp-image-78 alignnone" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/InputWithFaults.png" alt="InputWithFaults" width="299" height="224" /></a><a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/OutputWithFaults.png"><img class="wp-image-80 alignnone" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/OutputWithFaults.png" alt="OutputWithFaults" width="299" height="224" /></a></p>
+<p style="text-align: justify;"><a href="./images/InputWithFaults.png"><img class="wp-image-78 alignnone" src="./images/InputWithFaults.png" alt="InputWithFaults" width="299" height="224" /></a><a href="./images/OutputWithFaults.png"><img class="wp-image-80 alignnone" src="./images/OutputWithFaults.png" alt="OutputWithFaults" width="299" height="224" /></a></p>
 <p style="text-align: justify;">You could still identify the input pattern like this if you now that there was noise added; the output signal instead looks completly random and has not much in common with the "good case" output.</p>
 <p style="text-align: justify;">Analog this could be implemented and tested with any of the available errors and combinations of them and different scenarios could be tested, also by changing parameter of the blocks.</p>
