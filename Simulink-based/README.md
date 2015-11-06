@@ -6,11 +6,11 @@
 <p style="text-align: justify;">The system and the related response are shown in the following :</p>
 
 
-<a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/SimulationExample.PNG"><img class="wp-image-98 size-full" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/SimulationExample.PNG" alt="SimulationExample" width="578" height="189" /> <p>Simple simulation setup</p> </a>
+<a href="./images/SimulationExample.PNG"><img class="wp-image-98 size-full" src="./images/SimulationExample.PNG" alt="SimulationExample" width="578" height="189" /> <p>Simple simulation setup</p> </a>
 <p style="text-align: justify;">Now we want to add our FIU to see how the system reacts in "bad cases". Therefor the FIU-block (here: continuous) just needs to be put between our transfer function and the signal source. So the source should be connected with the input and the filter connected with output of the FIU then. After the intrusion of the FIU the new system should look like this:</p>
 
 
-<a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/SimulationExampleAndFIU.PNG"><img class="wp-image-101 size-full" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/SimulationExampleAndFIU.PNG" alt="SimulationExampleAndFIU" width="501" height="235" /><p>Modified simulation setup</p></a>
+<a href="./images/SimulationExampleAndFIU.PNG"><img class="wp-image-101 size-full" src="./images/SimulationExampleAndFIU.PNG" alt="SimulationExampleAndFIU" width="501" height="235" /><p>Modified simulation setup</p></a>
 <p style="text-align: justify;">Now we just need to configure the parameters of the different error blocks and we are good to go. They can be either set variable by other functions or inputs or set by the provided config-block which sets the parameters to constant values. To keep it as simple as possible we will use the second way in the following. So we just connect the block "Continuous_Config" with the remaining inputs of the FIU.</p>
 <p style="text-align: justify;">To change the values of the error parameters we need to go into the config-block and change the related constants there. By default all errors are deactivated and the new system would show the same behavior like the setup without the FIU.</p>
 
@@ -64,9 +64,9 @@
 <p style="text-align: justify;">So, if we want to test now how the system will react to a delay of 2 seconds and noise, we just change the constant value of "Set Delay" to "2" and the values of "Set NoiseRate" and "Set NoiseAmplitude" to "10" an "1". Afterwards the error-prone signal would look like this, compared to the original signal:</p>
 
 
-<a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/SourceSignal_vs_SignalWithFaults.PNG"><img class="wp-image-47 size-full" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/SourceSignal_vs_SignalWithFaults.PNG" alt="" width="653" height="266" /><p>Original signal vs. modified signal</p></a>
+<a href="./images/SourceSignal_vs_SignalWithFaults.PNG"><img class="wp-image-47 size-full" src="./images/SourceSignal_vs_SignalWithFaults.PNG" alt="" width="653" height="266" /><p>Original signal vs. modified signal</p></a>
 <p style="text-align: justify;">Like this, all different kinds of scenarios could be realised by adding or removing and changing of the parameters of the error-blocks. If we now look into our output signal with the current fault insertion we will see this signal:</p>
 
 
-<a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/OutputSignal.PNG"><img class="wp-image-44 size-full" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/OutputSignal.PNG" alt="OutputSignal" width="322" height="199" /><p>New output signal</p></a>
+<a href="./images/OutputSignal.PNG"><img class="wp-image-44 size-full" src="./images/OutputSignal.PNG" alt="OutputSignal" width="322" height="199" /><p>New output signal</p></a>
 <p style="text-align: justify;">Now it is quite easy to see that our system has an instable behavior in case of quickly changing values (noise), since the output signal values have such big magnitudes. Since this is a bad charateristic for a system in the most cases, we would already found one problem with just adding a bit of noise. If we analyse our transfer function we will see that this is caused by the d-term in our function. But since in reality it is most often way more complicated to analyse a given system or just not possible because you might not know the exact mathematical function of it, this toolbox provides an easy tool to test your system also in "bad cases".</p>
