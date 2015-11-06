@@ -6,7 +6,7 @@
 <p style="text-align: justify;">The system and the related response are shown in the following :</p>
 
 
-<a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/SimulationExample.PNG"><img class="wp-image-98 size-full" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/SimulationExample.PNG" alt="SimulationExample" width="578" height="189" /></a>
+<a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/SimulationExample.PNG"><img class="wp-image-98 size-full" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/Simulink-based/images/SimulationExample.PNG" alt="SimulationExample" width="578" height="189" /> <p>Simple simulation setup</p> </a>
 <p style="text-align: justify;">Now we want to add our FIU to see how the system reacts in "bad cases". Therefor the FIU-block (here: continuous) just needs to be put between our transfer function and the signal source. So the source should be connected with the input and the filter connected with output of the FIU then. After the intrusion of the FIU the new system should look like this:</p>
 
 
