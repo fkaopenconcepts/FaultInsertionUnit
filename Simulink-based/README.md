@@ -2,7 +2,7 @@
 
 <h2 style="text-align: justify;">Example Setup</h2>
 <p style="text-align: justify;">In this example we will work with a simple simulation setup of a transfer function. We want to observe how it will react on possible input errors. In case of simplification the here used input signal is just a sine with the amplitude 2. The transfer function is given by:</p>
-<p style="text-align: justify;"><span style="color: #000000;">[latex size=0 color=000000 background=ffffff]\displaystyle G(s) = s * \frac{1+0.2s^{-1}}{1}[/latex]</span></p>
+<img class="alignnone" src="./images/transferfunction.png"/>
 <p style="text-align: justify;">The system and the related response are shown in the following :</p>
 
 
