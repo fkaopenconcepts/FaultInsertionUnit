@@ -4,6 +4,8 @@
 
 <hr />
 
+[alt tag](./images/Input.png)
+
 <h2 style="text-align: justify;"><strong>Example Program
 </strong></h2>
 <p style="text-align: justify;">Our example program, which we want to test on tolerance for input errors, does  for reasons of simplification nothing else than calculating the slope between the current and the last signal value.</p>
