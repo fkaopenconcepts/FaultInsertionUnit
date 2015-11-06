@@ -6,7 +6,6 @@
 
 <h2 style="text-align: justify;"><strong>Example Program
 </strong></h2>
-<p style="text-align: justify;">(<a href="http://opensource.kuefen.de/downloads/">download</a>)</p>
 <p style="text-align: justify;">Our example program, which we want to test on tolerance for input errors, does  for reasons of simplification nothing else than calculating the slope between the current and the last signal value.</p>
 <p style="text-align: justify;">With the predefined input signal (left, blue) the output signal would look like the following (right, red):</p>
 
