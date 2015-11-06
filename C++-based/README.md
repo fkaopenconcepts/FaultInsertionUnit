@@ -4,7 +4,7 @@
 
 <hr />
 
-[alt tag](./images/Input.png)
+![alt tag](./images/Input.png =250x)
 
 <h2 style="text-align: justify;"><strong>Example Program
 </strong></h2>
