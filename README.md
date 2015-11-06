@@ -16,24 +16,3 @@
 	<li><a href="http://opensource.kuefen.de/systemvalidierung/fehleraufschaltung/ni-veristand-basiert/">VeriStand based simulations</a></li>
 </ul>
 <p style="text-align: justify;">Others are planned and will be available soon.</p>
-
-
-<hr />
-<p style="text-align: justify;">Zur Abbildung irregulären Systemverhaltens im Rahmen von Testfällen, bspw. im Rahmen von Systemtests, kann die Fehleraufschaltung "<strong>Fault Insertion Unit</strong>" (kurz: <strong>FIU</strong>) genutzt werden. Für ihre Integration wird der Signalpfad zum DUT unmittelbar vor dem DUT unterbrochen und über eine FIU umgeleitet. Damit ist die FIU das letzte Element im Signalpfad zum DUT und kann einen an das DUT gehenden Reiz des Testaufbaus übersteuerung und auch konstruktiv modifizieren.</p>
-<a href="http://opensource.kuefen.de/wp-content/uploads/2015/10/Schlechttest.png"><img class="alignnone wp-image-241 size-full" src="http://opensource.kuefen.de/wp-content/uploads/2015/10/Schlechttest.png" alt="" width="636" height="324" /></a>
-<p style="text-align: justify;">Die Integration der Fehleraufschaltung in den Testaufbau ist einfach und erlaubt flexible und umfassende Signalmodifikationen. Eine Übersicht der aktuell vorhandenen Signalmodifikationen der FIU findet sich <a href="http://opensource.kuefen.de/systemvalidierung/fehleraufschaltung/fehleraufschaltung/beschreibung-der-fehlerbloecke/">hier</a>. Die Blöcke können erweitert werden, falls zusätzliche Signalstörungen benötigt werden.</p>
-<p style="text-align: justify;">Bei der Nutzung der verschiedenen Signalmodifikationen der FIU ist die Reihenfolge der Verschaltung variabel sollte mit Hinblick auf plausibles Signalverhalten allerdings nicht willkürlich gewählt werden. Sinnvolle Anreihungen der Einzelmodifikationen geben die nachstehenden Abbildungen.</p>
-<p style="text-align: justify;"><span style="text-decoration: underline;">Modifikationen und Reihenfolge für kontinuierlich Signale:</span></p>
-<p style="text-align: justify;"><a href="http://opensource.kuefen.de/wp-content/uploads/2015/10/Continuous.png"><img class="alignnone wp-image-69" src="http://opensource.kuefen.de/wp-content/uploads/2015/10/Continuous.png" alt="Continuous" width="604" height="110" /></a></p>
-<p style="text-align: justify;"><span style="text-decoration: underline;">Modifikationen und Reihenfolge für digital Signale:</span></p>
-<p style="text-align: justify;"><a href="http://opensource.kuefen.de/wp-content/uploads/2015/10/Digital.png"><img class="alignnone wp-image-70" src="http://opensource.kuefen.de/wp-content/uploads/2015/10/Digital.png" alt="Digital" width="407" height="110" /></a></p>
-<p style="text-align: justify;"><span style="text-decoration: underline;">Modifiktation und Reihenfolge für quantisierte Signale:</span></p>
-<p style="text-align: justify;"><a href="http://opensource.kuefen.de/wp-content/uploads/2015/10/Case.png"><img class="alignnone wp-image-68" src="http://opensource.kuefen.de/wp-content/uploads/2015/10/Case.png" alt="Case" width="217" height="110" /></a></p>
-<p style="text-align: justify;">Die Realisierung der Fault Insertion Unit ist aktuell verfügbar für:</p>
-
-<ul style="text-align: justify;">
-	<li><a href="http://opensource.kuefen.de/systemvalidierung/fehleraufschaltung/fehleraufschaltungc-code-basiert/">C++ basierte Simulationen</a></li>
-	<li><a href="http://opensource.kuefen.de/systemvalidierung/fehleraufschaltung/simulink-basiert/">Simulink basierte Simulationen</a></li>
-	<li><a href="http://opensource.kuefen.de/systemvalidierung/fehleraufschaltung/ni-veristand-basiert/">VeriStand basierte Simulationen</a></li>
-</ul>
-<p style="text-align: justify;">Weitere Plattformen sind geplant und werden folgen.</p>
