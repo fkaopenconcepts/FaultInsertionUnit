@@ -1,4 +1,3 @@
-# README for C++-based Fault Insertion Unit
 <p style="text-align: justify;">In the use case of C++, the Fault Insertion Unit-Toolbox exists in form of one cpp- and one hpp-file. They contain all necessary functions and auxiliaries to realise the "bad-case" scenario in a simulation.</p>
 <p style="text-align: justify;">The following simple example of a C++ simulation program will show, how exactly the installation of the FIU program works.</p>
 
