@@ -40,12 +40,7 @@
 
 <p>Independent of its form, a test always consists the same elements: a unit under test ( the so-called "Device under test" or DUT), a description of the test sequence (of stimulus and response) and an environment where the DUT gets stimulated by the stimulus and the response can be detected, recorded and evaluated. The figure below shows this simplified.</p>
 
-<p><a href="./images/InputWithFaults.png"><img src="./images/InputWithFaults.png" alt="InputWithFaults" width="299" height="224"></a><a href="./images/OutputWithFaults.png"><img src="./images/OutputWithFaults.png" alt="OutputWithFaults" width="299" height="224"></a></p>
-
-<p><img src="https://cloud.githubusercontent.com/assets/15342917/10993700/0208e934-8471-11e5-9397-02bdb39af711.png" alt="sdfgs">
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png" alt="dfgdsf"></p>
-
-<p>!!! HIER SOLLTE EIN BILD ERSCHEINEN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p><a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/master/images/TestSetup.png"><img src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/master/images/TestSetup.png" alt="" width="636" height="327"></a></p>
 
 <p>There is alwas a test catalog which brackets all the available tests for the present scenario. It contains at least those tests, where the system behavior ist tested in a general regular use case. But other than that, also those tests which take a look at irregular and error containing cases are important.</p>
 
@@ -53,44 +48,9 @@
 
 <p>Especially in system tests the representation of irregular system behavior is a challenge, because the components (whether real or simulated) which interact with the DUT normally operate in their regular status and do not target to provide any fault neither functional nor technical errors. So these system tests can be categorized as "good-cases". On the other hand, those tests which also consider potential faults or other irregular conditions, are called "bad-cases" in the following. They definitly need more effort to accomplish but are quite relevant for security and reliability questions.</p>
 
-<p>!!! NAECHSTES BILD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p><a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/master/images/TestSetupWithFIU.png"><img src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/master/images/TestSetupWithFIU.png" alt="Schlechttest" width="636" height="324"></a></p>
 
-<p>To represent those "bad-cases", the stimulus and input of the DUT needs to be able to describe disturbed behavior, too. So in case of a system test the original signal flow needs to be modified by the rest of the test environment. The form of the modification may vary depending on which DUT you want to test and what kind of "bad-case" you want to look at. And this is the point, where the system can make use of the Fault Insertion Unit.</p>
-
-<p>!!! LETZTES WORT ALS LINK !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
-
-<p>!!! NEUE SEITE IM URSPRÜNGLICHEN DESIGN !!!!!!!!!!!!!!!!!</p>
-
-<p>In the case of test scenarios, e.g. for system tests, the "Fault Insertion Unit" (short: FIU) can be used to represent irregular system behavior. For its integration into a test scenario, the signal path from the stimulus to the DUT needs to be disrupted and diverted through the FIU so that the FIU is the last element on the signal path to the DUT and thus can regulate and modify the actual input.</p>
-
-<p>!!! BILD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
-
-<p>This allows an easy and central way for the integration into the test construction and offers flexible and comprehensive modifications. All modifications, which are already implemented and available, can be found in an overview here. If needed, the fault blocks can be extended and modified easily.</p>
-
-<p>Theoretically the chronological order in which the different fault blocks can modify the signal is variable. Although some modifications will not have the desired effect on the signal when there are also other modifications which work "against them". So the Fault Insertion Unit already offers the most convenient orders for the different signal types which are illustrated below:</p>
-
-<p>Modifications and order for continuous signals:</p>
-
-<p>!!! BILD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
-
-<p>Modifications and order for digital signals:</p>
-
-<p>!!! BILD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
-
-<p>Modifications and order for quantized signals:</p>
-
-<p>!!! BILD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
-
-<p>The implementation of the Fault Insertion Unit is currently available for:</p>
-
-<pre><code>C++ based simulations
-Simulink based simulations
-VeriStand based simulations
-</code></pre>
-
-<p>!!! WIEDER LINKS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
-
-<p>Others are planned and will be available soon.</p>
+<p>To represent those "bad-cases", the stimulus and input of the DUT needs to be able to describe disturbed behavior, too. So in case of a system test the original signal flow needs to be modified by the rest of the test environment. The form of the modification may vary depending on which DUT you want to test and what kind of "bad-case" you want to look at. And this is the point, where the system can make use of the <a href="https://github.com/fkaopenconcepts/FaultInsertionUnit">Fault Insertion Unit</a>.</p>
       </section>
     </div>
 
