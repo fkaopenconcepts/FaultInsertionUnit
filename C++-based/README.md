@@ -4,14 +4,12 @@
 
 <hr />
 
-![alt tag](./images/Input.png =250x)
-
 <h2 style="text-align: justify;"><strong>Example Program
 </strong></h2>
 <p style="text-align: justify;">Our example program, which we want to test on tolerance for input errors, does  for reasons of simplification nothing else than calculating the slope between the current and the last signal value.</p>
 <p style="text-align: justify;">With the predefined input signal (left, blue) the output signal would look like the following (right, red):</p>
 
-<p style="text-align: justify;"><a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/Input.png"><img class="alignnone wp-image-77" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/Input.png" alt="Input" width="299" height="224" /></a> <a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/Output.png"><img class="alignnone wp-image-79" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/Output.png" alt="Output" width="299" height="224" /></a></p>
+<p style="text-align: justify;"><a href="./images/Input.png"><img class="alignnone wp-image-77" src="./images/Input.png" alt="Input" width="299" height="224" /></a> <a href="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/Output.png"><img class="alignnone wp-image-79" src="https://raw.githubusercontent.com/fkaopenconcepts/FaultInsertionUnit/test/C%2B%2B-based/images/Output.png" alt="Output" width="299" height="224" /></a></p>
 
 <p style="text-align: justify;">The main loop of our program contains the following code segements where the signal processing is happening:</p>
 
